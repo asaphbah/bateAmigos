@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+    <script src="/js/index.js"></script>
+</head>
+<body onresize="ajustaTamanho()"  id="main">
+
+    <main>
+        <div class="painel">
+            <ul class="vida">Vida:
+                <li id="v1"></li>
+                <li id="v2"></li>
+                <li id="v3"></li>
+            </ul>
+            <div class="cronometro">TEMPO RESTANTE:<span id="cronometro"></span></div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('cronometro').innerHTML = tempo
+        
+        var criaAlvo = setInterval( function(){
+            posicaoRandom()  
+        }, velocidade)
+        
+    </script>
+</body>
+</html>
