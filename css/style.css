@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+*{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-family: 'Play', sans-serif;
+}
+body{
+    
+background-color: aliceblue;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    background: url(../img/background.png);
+    background-repeat: no-repeat;
+}
+header{
+    margin-top: 5vh;
+}
+.opcao{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.alvo1{
+    width: 100px;
+    height: 100px;
+}
+.alvo2{
+    width: 200px;
+    height: 200px;
+}
+.alvo3{
+    width: 300px;
+    height: 300px;
+}
+.alvoLado1{
+    transform: scaleX(1);
+}
+.alvoLado2{
+    transform: scaleX(-1);
+}
+.painel{
+    background-color: aliceblue;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    height: 200px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+.vida{
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+    background-color: rgb(245, 0, 0);
+    border:  2px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+button{
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+}
+.btn-reinicia{
+    margin-bottom: 10vh;
+}
